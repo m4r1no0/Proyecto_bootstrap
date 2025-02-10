@@ -13,6 +13,7 @@ botonBand.forEach(function(boton) {
         const imagenUno = document.querySelector('.imgenContenedor');
         const precio = document.querySelector('.precioUnit');
         imagenUno.classList.add("imagenUno");
+
         precio.textContent=precios[0];
     }else if(boton.id == "botonDos"){
         const imagenDos = document.querySelector('.imgenContenedor');
@@ -39,8 +40,32 @@ botonBand.forEach(function(boton) {
         const precio = document.querySelector('.precioUnit');
         imagenSeis.classList.add("imagenSeis");
         precio.textContent=precios[5];
-    }
+    };
     catalogo.classList.add("d-none");
     carrito.classList.remove("d-none");
     });
 });
+
+   /*  const check = document.querySelectorAll('.btn');
+    check.forEach(function(evento) {
+    evento.addEventListener("click", function() {
+        let  eventos = evento;
+        if(evento.id == "btnradioUno"){
+            const precio = document.querySelector('.precioUnit');
+            const check = document.querySelector('.btn.check')
+            let total = precio[0]*check.value
+            precio.textContent=total;
+        }else if(evento.id == "btnradioDos"){
+            const precio = document.querySelector('.precioUnit');
+            const check = document.querySelector('.btn.check')
+            let total = precio[0]*check.value
+            precio.textContent=total;
+        }else{
+            const precio = document.querySelector('.precioUnit');
+            const check = document.querySelector('.btn.check')
+            let total = precio[0]*check.value
+            precio.textContent=total;
+        };
+
+    });
+}); */

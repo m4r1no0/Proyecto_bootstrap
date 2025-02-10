@@ -5,3 +5,27 @@ footer{
     color: white;
 
 }
+.imagenUno{
+    background-image: url(/img/1.jpg);
+    height: 310px;
+}
+.imagenDos{
+    background-image: url(/img/2.jpg);
+    height: 310px;
+}
+.imagenTres{
+    background-image: url(/img/3.jpg);
+    height: 310px;
+}
+.imagenCuatro{
+    background-image: url(/img/4.jpg);
+    height: 310px;
+}
+.imagenCinco{
+    background-image: url(/img/5.jpg);
+    height: 310px;
+}
+.imagenSeis{
+    background-image: url(/img/6.jpg);
+    height: 310px;
+}
