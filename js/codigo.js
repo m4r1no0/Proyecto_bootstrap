@@ -9,6 +9,7 @@ const carrito = document.querySelector('.shop');
 botonBand.forEach(function(boton) {
     boton.addEventListener("click", function() {
     let botonNumero = boton;
+    const precio = document.querySelector('.precioUnit');
     if(boton.id == "botonUno"){
         const imagenUno = document.querySelector('.imgenContenedor');
         const precio = document.querySelector('.precioUnit');
@@ -17,12 +18,10 @@ botonBand.forEach(function(boton) {
         precio.textContent=precios[0];
     }else if(boton.id == "botonDos"){
         const imagenDos = document.querySelector('.imgenContenedor');
-        const precio = document.querySelector('.precioUnit');
         imagenDos.classList.add("imagenDos");
         precio.textContent=precios[1];
     }else if(boton.id == "botonTres"){
         const imagenTres = document.querySelector('.imgenContenedor');
-        const precio = document.querySelector('.precioUnit');
         imagenTres.classList.add("imagenTres");
         precio.textContent=precios[2];
     }else if(boton.id == "botonCuatro"){
@@ -32,12 +31,10 @@ botonBand.forEach(function(boton) {
         precio.textContent=precios[3];
     }else if(boton.id == "botonCinco"){
         const imagenCinco = document.querySelector('.imgenContenedor');
-        const precio = document.querySelector('.precioUnit');
         imagenCinco.classList.add("imagenCinco");
         precio.textContent=precios[4];
     }else{
         const imagenSeis = document.querySelector('.imgenContenedor');
-        const precio = document.querySelector('.precioUnit');
         imagenSeis.classList.add("imagenSeis");
         precio.textContent=precios[5];
     };
@@ -46,26 +43,23 @@ botonBand.forEach(function(boton) {
     });
 });
 
-   /*  const check = document.querySelectorAll('.btn');
+    const check = document.querySelectorAll('.form-check');
+    const precio = document.querySelector('.precioUnit');
+    const valor = document.querySelector('.form-check-input');
+    let total = 0;
     check.forEach(function(evento) {
-    evento.addEventListener("click", function() {
+    evento.addEventListener("change", function() {
         let  eventos = evento;
-        if(evento.id == "btnradioUno"){
-            const precio = document.querySelector('.precioUnit');
-            const check = document.querySelector('.btn.check')
-            let total = precio[0]*check.value
+        if(eventos.id == "flexRadioDefault1"){
+            let total = precios[0]*1
             precio.textContent=total;
-        }else if(evento.id == "btnradioDos"){
-            const precio = document.querySelector('.precioUnit');
-            const check = document.querySelector('.btn.check')
-            let total = precio[0]*check.value
+        }else if(eventos.id == "flexRadioDefault2"){
+            total = precios[0]*2
             precio.textContent=total;
         }else{
-            const precio = document.querySelector('.precioUnit');
-            const check = document.querySelector('.btn.check')
-            let total = precio[0]*check.value
+            total = precios[0]*3
             precio.textContent=total;
         };
-
+        console.log(total);
     });
-}); */
+});
