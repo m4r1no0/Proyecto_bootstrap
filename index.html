@@ -9,12 +9,9 @@
     </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary container">
+        <nav class="navbar  container">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html">Tienda informatica</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
             </div>
         </nav>
 
@@ -140,7 +137,7 @@
               <div class="col">
                 <div class="card">
                   <div class="card-body">
-                    <h5 class="card-title">Envio Gratis</h5>
+                    <h5 class="card-title enviado">Envio Gratis</h5>
                     <p class="card-text">Entrega en la puerta de tu casa</p>
                     <button type="button" class="btn btn-secondary envio">Envio Gratis</button>
                   </div>
@@ -149,7 +146,7 @@
               <div class="col">
                 <div class="card">
                   <div class="card-body">
-                    <h5 class="card-title">Recoge en tienda</h5>
+                    <h5 class="card-title recogida">Recoge en tienda</h5>
                     <p class="card-text">Disponible en tienda </p>
                     <button type="button" class="btn btn-secondary recoge">Recoge en tienda</button>
                   </div>
@@ -186,8 +183,8 @@
         </div>
         <div class="row mt-4 justify-content-center">
           <div class="col text-center">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              Comprar
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exitoso" id="ultimo">
+              Confirmar Compra
             </button>
           </div>
         </div>
@@ -200,6 +197,50 @@
     <div class="offset"></div>
   </section>
     
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exitoso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Resumen</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col">
+            <h6>Precio</h6>
+            <p class="resumenPrecio"></p>
+          </div>
+          <div class="col">
+            <h6>Cantidad</h6>
+            <p class="cantidades"></p>
+          </div>
+          <div class="col">
+            <h6>Envio</h6>
+            <p class="tipoEnvio"></p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Salir</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
 
 
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

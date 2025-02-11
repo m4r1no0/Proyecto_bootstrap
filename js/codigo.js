@@ -173,14 +173,34 @@ const envio = document.querySelector('.envio');
 const recoge = document.querySelector('.recoge')
 envio.addEventListener('click',function(){
     envio.classList.replace('btn-secondary','btn-primary');
+    envio.classList.add("activo")
     if(recoge.classList.contains("btn-primary")){
         recoge.classList.replace("btn-primary","btn-secondary");
+        recoge.classList.remove("activo")
+        
     }
 });
 recoge.addEventListener('click',function(){
     recoge.classList.replace('btn-secondary','btn-primary');
+    recoge.classList.add("activo")
     if(envio.classList.contains("btn-primary")){
         envio.classList.replace("btn-primary","btn-secondary");
+        envio.classList.remove("activo")
+        
     }  
 });
-    
+
+const final = document.querySelector('#ultimo');
+const precioFinal = document.querySelector('.resumenPrecio');
+const cant = document.querySelector('.cantidades');
+const tipoEnvio = document.querySelector('.tipoEnvio');
+
+final.addEventListener('click',function(){
+    console.log(total);
+    const finalEnvio = document.querySelector('.activo');
+    let envioTexto = finalEnvio.textContent;
+    const precioUnit = document.querySelector('.precioUnit');
+    precioFinal.textContent = precioUnit.textContent;
+    cant.textContent = digito;
+    tipoEnvio.textContent = envioTexto;
+})
