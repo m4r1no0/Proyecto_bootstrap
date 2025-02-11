@@ -168,4 +168,19 @@ botonBand.forEach(function(boton) {
     carrito.classList.remove("d-none");
     });
 });
+
+const envio = document.querySelector('.envio');
+const recoge = document.querySelector('.recoge')
+envio.addEventListener('click',function(){
+    envio.classList.replace('btn-secondary','btn-primary');
+    if(recoge.classList.contains("btn-primary")){
+        recoge.classList.replace("btn-primary","btn-secondary");
+    }
+});
+recoge.addEventListener('click',function(){
+    recoge.classList.replace('btn-secondary','btn-primary');
+    if(envio.classList.contains("btn-primary")){
+        envio.classList.replace("btn-primary","btn-secondary");
+    }  
+});
     
