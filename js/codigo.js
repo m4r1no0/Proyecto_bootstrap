@@ -159,3 +159,4 @@ botonBand.forEach(function(boton) {
             console.log(total);
         });
     });
+    
