@@ -8,29 +8,36 @@ footer{
 .imagenUno{
     background-image: url(/img/1.jpg);
     height: 310px;
+    background-repeat: no-repeat;
 }
 .imagenDos{
     background-image: url(/img/2.jpg);
     height: 310px;
+    background-repeat: no-repeat;
 }
 .imagenTres{
     background-image: url(/img/3.jpg);
     height: 310px;
+    background-repeat: no-repeat;
 }
 .imagenCuatro{
     background-image: url(/img/4.jpg);
     height: 310px;
+    background-repeat: no-repeat;
 }
 .imagenCinco{
     background-image: url(/img/5.jpg);
     height: 310px;
+    background-repeat: no-repeat;
 }
 .imagenSeis{
     background-image: url(/img/6.jpg);
     height: 310px;
+    background-repeat: no-repeat;
 }
 .offset{
     height: 400px;
+    
 }
 .modal-footer{
     align-self: center;
