@@ -174,7 +174,7 @@
                       </label>
                     </div>
                   </div>
-                    <div class="col">
+                    <div class="col text-center">
                       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Comprar
                       </button>
@@ -184,8 +184,9 @@
           </div>
         </div>
       </div>
-
-      
+  </section>
+  <section class="container">
+    <div class="offset"></div>
   </section>
     
 
@@ -198,23 +199,23 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <div class="col col-sm-12 col-md-6 col-lg-4 -2">
+          <div>
             <form class="row g-3 needs-validation" novalidate>
-                <div class="col">
+                <div>
                   <label for="validationTooltip01" class="form-label">Nombre</label>
                   <input type="text" class="form-control" id="validationTooltip01" required>
                   <div class="valid-tooltip">
                     Looks good!
                   </div>
                 </div>
-                <div class="col">
+                <div>
                   <label for="validationTooltip02" class="form-label">Apellido</label>
                   <input type="text" class="form-control" id="validationTooltip02" required>
                   <div class="valid-tooltip">
                     Looks good!
                   </div>
                 </div>
-                <div class="col">
+                <div>
                   <label for="validationTooltipUsername" class="form-label">Correo</label>
                   <div class="input-group has-validation">
                     <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
@@ -224,33 +225,29 @@
                     </div>
                   </div>
                 </div>
-                <div class="col">
+                <div>
                   <label for="validationTooltip03" class="form-label">Direccion</label>
                   <input type="text" class="form-control" id="validationTooltip03" required>
                   <div class="invalid-tooltip">
                     Please provide a valid city.
                   </div>
                 </div>
-                <div class="col">
+                <div>
                   <label for="validationTooltip04" class="form-label">Metodo de pago</label>
                   <select class="form-select" id="validationTooltip04" required>
                     <option selected disabled value="">Choose...</option>
                     <option>Tarjeta credito</option>
-                    <option>Efecty</option>
+                    <option>Credito Directo</option>
                   </select>
                   <div class="invalid-tooltip">
                     Please select a valid state.
                   </div>
                 </div>
-                <div class="col-12 text-center p-2">
-                  <button class="btn btn-primary botonBandera" type="submit">Pagar</button>
-                </div>
               </form>
             </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+        <div class="modal-footer text-center">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Confirmar Compra</button>
         </div>
       </div>
     </div>

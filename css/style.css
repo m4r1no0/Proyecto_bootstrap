@@ -29,3 +29,9 @@ footer{
     background-image: url(/img/6.jpg);
     height: 310px;
 }
+.offset{
+    height: 400px;
+}
+.modal-footer{
+    align-self: center;
+}
