@@ -42,3 +42,6 @@ footer{
 .modal-footer{
     align-self: center;
 }
+.contador{
+    font-size: 1.5em;
+}
